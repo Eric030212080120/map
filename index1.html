@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>我的第一個網站</title>
+    <style>
+        body {
+            font-family: "微軟正黑體", sans-serif;
+            background-color: #f9f9f9;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #3498db;
+        }
+        p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>歡迎來到我的網站！</h1>
+    <p>這是一個簡單的 HTML 頁面。</p>
+    <p>今天是：<span id="today"></span></p>
+
+    <script>
+        const today = new Date().toLocaleString();
+        document.getElementById("today").innerText = today;
+    </script>
+</body>
+</html>
